@@ -1,0 +1,6 @@
+# Requirements.txt
+fastapi
+uvicorn
+python-multipart
+reportlab
+ollama
