@@ -104,7 +104,9 @@ BASE_PROMPT = """Analyze this agricultural image and provide:
 - Growth Stage: {growth_stage}
 - Visible Soil Characteristics: {soil_type}
 - Observed Health Indicators: {health_status}
-- Key Visual Symptoms: {visual_symptoms}"""
+- Key Visual Symptoms: {visual_symptoms}
+
+Provide concise responses using bullet points and short phrases. Limit lists to 3 items maximum."""
 
 DISEASE_PROMPT = """Based on previous analysis:
 {base_analysis}
@@ -115,7 +117,9 @@ Identify disease characteristics:
 3. Symptoms: {symptoms}
 4. Severity: [% affected + stage]
 5. Lifecycle: [brief description]
-6. Risk Factors: {risk_factors}"""
+6. Risk Factors: {risk_factors}
+
+Provide concise responses using bullet points and short phrases. Limit lists to 3 items maximum."""
 
 SOIL_PROMPT = """Using previous data:
 {base_analysis}
@@ -128,7 +132,9 @@ Analyze soil:
    - Nitrogen: [level]
    - Phosphorus: [level]
    - Potassium: [level]
-5. Recommendations: [list]"""
+5. Recommendations: [list]
+
+Provide concise responses using bullet points and short phrases. Limit lists to 3 items maximum."""
 
 # Add Yield Analysis Prompt
 YIELD_PROMPT = """Based on this analysis:
@@ -140,7 +146,9 @@ Estimate crop yield and economic impact:
 1. Current Yield Estimate: [kg/ha or ton/acre with reasoning]
 2. Potential Loss: [% loss + reasons]
 3. Optimization Strategies: [list 5 specific actions]
-4. Economic Impact: [USD/ha analysis]"""
+4. Economic Impact: [USD/ha analysis]
+
+Provide concise responses using bullet points and short phrases. Limit lists to 3 items maximum."""
 
 # Update Management Prompt
 MANAGEMENT_PROMPT = """Create detailed management plan from:
@@ -172,7 +180,9 @@ Dosage: [amount per acre]
 - [list 3 natural controls]
 
 [Chemical Treatments]
-- [list 3 specific products]"""
+- [list 3 specific products]
+
+Provide concise responses using bullet points and short phrases. Limit lists to 3 items maximum."""
 
 # Enhanced Helper Functions with fallbacks
 def build_user_input_section(user_input: UserInput) -> str:
